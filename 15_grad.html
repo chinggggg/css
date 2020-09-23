@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>grad</title>
+    <style>
+        .box {
+            height: 100px;
+            width: 600px;
+            margin-bottom: 20px;
+        }
+
+        .grad1 {
+            background: linear-gradient(#FFF886, #FFAA85, #FD6E6A, #FD6585);
+        }
+
+        .grad2 {
+            background: linear-gradient(to right, #FFF886, #FFAA85, #FD6E6A, #FD6585);
+        }
+
+        .grad3 {
+            background: linear-gradient(135deg, #FFF886, #FFAA85, #FD6E6A, #FD6585);
+        }
+
+        .grad4 {
+            background: linear-gradient(to right, #FFF886 10%, #FFAA85, #FD6E6A 30%, #FD6585);
+        }
+
+        .grad5 {
+            background: linear-gradient(to left, rgba(248, 117, 61, 0), rgba(248, 117, 61, 1))
+        }
+
+        .grad6 {
+            background: linear-gradient(to left, rgba(60, 150, 100, 0.4), rgb(121, 180, 87, 0.3)), linear-gradient(200deg, rgba(54, 111, 185, 0.4), rgb(57, 78, 168)70%),
+                linear-gradient(to right, #FFF886 10%, #FFAA85, #FD6E6A 30%, #FD6585);
+        }
+
+        .grad7 {
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(to left, rgba(60, 150, 100, 0.4), rgb(121, 180, 87, 0.3)), linear-gradient(200deg, rgba(54, 111, 185, 0.7), rgb(57, 78, 168, 0.7)70%),
+                linear-gradient(127deg, #FFF886 10%, #FFAA85, #FD6E6A 30%, #FD6585);
+        }
+
+        .grad8 {
+            background: linear-gradient(rgba(54, 111, 185, 0.5) 50%, rgb(57, 78, 168, 0.5) 50%),
+                linear-gradient(to left, rgba(54, 111, 185, 1) 50%, rgb(57, 78, 168, 1) 50%);
+            background-size: 20px 20px;
+        }
+
+        .grad9 {
+            background: repeating-linear-gradient(to right, #FFF886, #FFAA85 10%);
+        }
+
+        .grad10 {
+            font-size: 100px;
+            font-weight: 900;
+            height: 150px;
+            background: linear-gradient(#FFF886, #FFAA85, #FD6E6A, #FD6585 50%);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .grad11 {
+            background: radial-gradient(#FFAA85, #8D2B2B);
+        }
+
+        .grad12 {
+            background: radial-gradient(circle, #FFAA85, #8D2B2B);
+        }
+
+        .grad13 {
+            background: radial-gradient(at 10% 10%, #FFAA85, #8D2B2B);
+        }
+
+        .grad14 {
+            background: radial-gradient(circle at right bottom, #FFAA85, #8D2B2B);
+        }
+
+        .grad15 {
+            background: repeating-radial-gradient(circle, #FFF886, #FFAA85 20%, #FD6E6A 30%, #FD6585 40%, #FFF886)
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box grad1"></div>
+    <div class="box grad2"></div>
+    <div class="box grad3"></div>
+    <div class="box grad4"></div>
+    <div class="box grad5"></div>
+    <div class="box grad6"></div>
+    <div class="box grad7"></div>
+    <div class="box grad8"></div>
+    <div class="box grad9"></div>
+    <div class="box grad10">Hello</div>
+    <div class="box grad11"></div>
+    <div class="box grad12"></div>
+    <div class="box grad13"></div>
+    <div class="box grad14"></div>
+    <div class="box grad15"></div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            width: 100%;
+        }
+
+        .box {
+            padding: 10px;
+            margin: 10px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .box1 {
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt optio ex odio tempora, et
+            doloribus tempore recusandae ab vel? Fugiat ad similique hic minima incidunt perferendis eum quibusdam amet
+            vitae?</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt optio ex odio tempora, et
+            doloribus tempore recusandae ab vel? Fugiat ad similique hic minima incidunt perferendis eum quibusdam amet
+            vitae?</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt optio ex odio tempora, et
+            doloribus tempore recusandae ab vel? Fugiat ad similique hic minima incidunt perferendis eum quibusdam amet
+            vitae?</div>
+
+
+        <div class="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt optio ex odio tempora, et
+            doloribus tempore recusandae ab vel? Fugiat ad similique hic minima incidunt perferendis eum quibusdam amet
+            vitae?</div>
+        <div class="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt optio ex odio tempora, et
+            doloribus tempore recusandae ab vel? Fugiat ad similique hic minima incidunt perferendis eum quibusdam amet
+            vitae?</div>
+        <div class="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt optio ex odio tempora, et
+            doloribus tempore recusandae ab vel? Fugiat ad similique hic minima incidunt perferendis eum quibusdam amet
+            vitae?</div>
+
+    </div>
+</body>
+
+</html>

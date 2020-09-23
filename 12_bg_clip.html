@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bg_clip</title>
+    <style>
+        body {
+            background-color: #333;
+        }
+
+        .box {
+            width: 300px;
+            height: 300px;
+            border: 10px dashed rgba(255, 255, 255, 1);
+            background-size: 200px auto;
+            background: url("images/back1.jpg") no-repeat;
+            float: left;
+            margin: 20px;
+            padding: 20px;
+
+        }
+
+        .border {
+            background-clip: border-box;
+        }
+
+        .padding {
+            background-clip: padding-box;
+        }
+
+        .content {
+
+            background-clip: content-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box border"></div>
+    <div class="box padding"></div>
+    <div class="box content"></div>
+</body>
+
+</html>

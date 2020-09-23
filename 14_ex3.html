@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #333;
+        }
+
+        .pic {
+            width: 600px;
+            height: 400px;
+            background: url(./images/cat-5414737_1280.jpg);
+            background-size: cover;
+            padding: 10px;
+            margin: 30px;
+        }
+
+        /* .text {
+            display: inline-block;
+            margin: 10px;
+            background-color: rgba(255, 255, 255, 0.5);
+        } */
+
+        p {
+            border: 10px solid rgba(255, 255, 255, 0.5);
+            background-clip: padding-box;
+            width: 200px;
+            background-color: #fff;
+            padding: 10px;
+            margin: 30px;
+
+        }
+
+        .container {
+            position: relative;
+
+        }
+
+        .paris {
+            position: relative;
+            /* width: 600px; */
+            height: 300px;
+            background: url("./images/city.jpg")center center no-repeat;
+            background-size: cover;
+            margin: 30px;
+
+        }
+
+        .paris:hover {
+            filter: brightness(40%);
+            transition: 0.5s;
+        }
+
+        h2 {
+            margin: 0px;
+            color: white;
+            position: absolute;
+            left: 50%;
+            bottom: 10px;
+            /* text-align: center; */
+            transform: translate(-50%);
+            opacity: 0.2;
+            transition: 1s;
+        }
+
+        .container:hover h2 {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pic">
+        <p>hi~~~~~~~~~~~~~~~~~</p>
+    </div>
+    </div>
+    <div class="container">
+        <div class="paris"></div>
+        <h2>paris</h2>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

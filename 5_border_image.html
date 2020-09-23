@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            border: solid 20px transparent;
+            border-image: url(./images/border-image.png) 20 round;
+            margin: 10px;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            border: solid 10px red;
+            border-image: url(./images/border-image.png) 20 repeat;
+        }
+        .box3{
+            width: 500px;
+            border-image: url(./images/border-image.png) 20 stretch;
+        }
+        
+    </style>
+   
+</head>
+<body>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    
+</body>
+</html>
