@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid_areas</title>
+    <style>
+        .container {
+            width: 800px;
+            height: 500px;
+            display: grid;
+            grid-template-columns: 240px auto;
+            Grid-template-rows: 100px 200px 1fr;
+            gap: 10px 10px;
+            grid-template-areas:
+                "header header"
+                "menu content"
+                "footer footer";
+        }
+
+        .header {
+            grid-area: header;
+            background-color: aquamarine;
+        }
+
+        .menu {
+            grid-area: menu;
+            background-color: aquamarine;
+        }
+
+        .content {
+            grid-area: content;
+            background-color: aquamarine;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box header">header</div>
+        <div class="box menu">menu</div>
+        <div class="box content">content</div>
+        <div class="box footer">footer</div>
+    </div>
+
+
+</body>
+
+</html>

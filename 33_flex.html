@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .wrap {
+            display: flex;
+            /* height: 700px; */
+            flex-direction: row;
+            /* justify-content: space-between; */
+            background-color: rgb(233, 233, 233);
+        }
+
+        .wrap1 {
+            display: flex;
+            justify-content: space-around;
+            height: 200px;
+
+        }
+
+        .wrap2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+        }
+
+        h3 {
+            text-align: center;
+            color: rgb(53, 53, 53);
+        }
+
+        .box {
+            width: 100px;
+            /* height: 100px; */
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #fff;
+        }
+
+        .box1 {
+            flex-grow: 1;
+            height: 50px;
+        }
+
+        .box2 {
+            flex-grow: 3;
+            height: 50px;
+        }
+
+        .box3 {
+            width: 700px;
+            flex-shrink: 3000;
+            height: 50px;
+        }
+
+        .box4 {
+            width: 700px;
+            flex-shrink: 1;
+            height: 50px;
+        }
+
+        .basis {
+            flex-basis: 1000px;
+            width: 400px;
+            /* min-width: 700px; */
+        }
+
+        .box5 {
+            flex-basis: 0px;
+            flex-grow: 1;
+        }
+
+        .wrap4 {
+            width: 800px;
+            flex-wrap: wrap;
+        }
+
+        .box6 {
+            width: 100px;
+            height: 100px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h3>flex-direction 排列方向</h3>
+    <div class="wrap">
+        <div class="box autobg">box1</div>
+        <div class="box autobg">box2</div>
+        <div class="box autobg">box3</div>
+    </div>
+    <h3>justify-content 垂直對齊</h3>
+    <div class="wrap wrap1">
+        <div class="box autobg">box1</div>
+        <div class="box autobg">box2</div>
+        <div class="box autobg">box3</div>
+    </div>
+
+    <h3>align-items 水平對齊</h3>
+    <div class="wrap wrap2">
+        <div class="box autobg">box1</div>
+        <div class="box autobg">box2</div>
+        <div class="box autobg">box3</div>
+    </div>
+    <h3>flex-grow 多餘空間 - 自動橫向分配</h3>
+    <div class="wrap wrap3">
+        <div class="box box1 autobg">box1</div>
+        <div class="box box2 autobg">box2</div>
+        <div class="box box1 autobg">box3</div>
+    </div>
+
+    <h3>flex-shrink 沒有空間 - 自動橫向分配</h3>
+    <div class="wrap wrap3">
+        <div class="box box4 autobg">box1</div>
+        <div class="box box3 autobg">box2</div>
+        <div class="box box4 autobg">box3</div>
+    </div>
+
+    <h3>flex-basis 橫向分配權重 ★★★★★</h3>
+    <h3>max-width/min-width > flex-basis > width > content</h3>
+    <div class="wrap">
+        <div class="box autobg basis">box1</div>
+        <div class="box autobg">box2</div>
+        <div class="box autobg">box3</div>
+    </div>
+    <h3>flex-basis + flex-grow ★★★★★</h3>
+    <div class="wrap wrap3">
+        <div class="box box4 box5 autobg">box1</div>
+        <div class="box box3 box5 autobg">box2</div>
+        <div class="box box4 box5 autobg">box3</div>
+    </div>
+    <h3>flex-wrap</h3>
+    <div class="wrap wrap4">
+        <div class=" box6 autobg">box1</div>
+        <div class=" box6 autobg">box2</div>
+        <div class=" box6 autobg">box3</div>
+        <div class=" box6 autobg">box4</div>
+        <div class=" box6 autobg">box5</div>
+        <div class=" box6 autobg">box6</div>
+        <div class=" box6 autobg">box7</div>
+        <div class=" box6 autobg">box8</div>
+        <div class=" box6 autobg">box9</div>
+        <div class=" box6 autobg">box10</div>
+        <div class=" box6 autobg">box11</div>
+        <div class=" box6 autobg">box12</div>
+    </div>
+
+
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <script>
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * Math.floor(max - 50) + 100);
+        }
+
+        function getRBGA() {
+            return `linear-gradient(135deg, rgba(${getRandomInt(256)},${getRandomInt(256)},${getRandomInt(256)},.5), rgba(${getRandomInt(256)},${getRandomInt(256)},${getRandomInt(256)},.8)`
+        }
+
+        const elements = document.querySelectorAll('.autobg');
+
+        Array.from(elements).forEach((element, index) => {
+            element.style.backgroundImage = getRBGA();
+        });
+
+    // $('.autobg').each(function (index, currentElement) {
+    //     currentElement.style.backgroundImage = getRBGA();
+    // });
+    </script>
+</body>
+
+</html>

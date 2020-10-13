@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-content</title>
+    <style>
+        .container {
+            width: 1000px;
+            height: 550px;
+            background-color: #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .wrap {
+            width: 950px;
+            height: 500px;
+            background-color: #afa;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: space-between;
+            /* 預設是stretch */
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #eee;
+            outline: cadetblue 1px solid;
+            margin: 5px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+<h3>align-content</h3>
+<div class="container">
+    <div class="wrap">
+        <div class="box autobg">box1</div>
+        <div class="box autobg">box2</div>
+        <div class="box autobg">box3</div>
+        <div class="box autobg">box4</div>
+        <div class="box autobg">box5</div>
+        <div class="box autobg">box6</div>
+        <div class="box autobg">box7</div>
+        <div class="box autobg">box8</div>
+        <div class="box autobg">box9</div>
+        <div class="box autobg">box10</div>
+        <div class="box autobg">box11</div>
+        <div class="box autobg">box12</div>
+        <div class="box autobg">box13</div>
+        <div class="box autobg">box14</div>
+        <div class="box autobg">box15</div>
+    </div>
+</div>
+
+</html>
